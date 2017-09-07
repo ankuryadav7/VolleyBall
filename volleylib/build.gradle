@@ -30,5 +30,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.mcxiaoke.volley:library:1.0.19'
 }
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
