@@ -5,14 +5,10 @@ package com.ankuryadav.volleylib.helper;
  */
 
 public class TimeContstant {
-
-
     private int timeout;
-
     public void setTimeout(int timeout) {
         this.timeout = timeout;
     }
-
     public int getTimeout() {
         return timeout;
     }

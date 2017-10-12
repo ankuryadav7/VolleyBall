@@ -8,7 +8,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.ankuryadav.volleylib.helper.VolleyLogs;
-import com.ankuryadav.volleylib.interfaces.VolleyResponseListner;
+import com.ankuryadav.volleylib.interfaces.VolleyResponseListener;
 import com.ankuryadav.volleylib.request.VolleyRequestQueue;
 import org.json.JSONObject;
 import java.io.IOException;
@@ -24,13 +24,11 @@ import java.util.Map;
 public class VolleyRequest {
 
     Activity context;
-    VolleyResponseListner res;
+    VolleyResponseListener res;
     public VolleyRequest(Activity context) {
         this.context=context;
-        res = (VolleyResponseListner)context;
-
+        res = (VolleyResponseListener)context;
     }
-
 
     /**
      * @param URL= URL to be called
