@@ -8,6 +8,6 @@ Gradle
 ```
 dependencies {
     ...
-   compile 'com.ankuryadav.lib:volleylib:1.0.0'
+   compile 'com.ankuryadav.lib:volleylib:1.0.1'
 }
 ```
