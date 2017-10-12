@@ -8,14 +8,14 @@ import com.ankuryadav.lib.helper.GlobalUrl;
 import com.ankuryadav.lib.helper.RequestParams;
 import com.ankuryadav.volleylib.VolleyRequest;
 import com.ankuryadav.volleylib.helper.VolleyLogs;
-import com.ankuryadav.volleylib.interfaces.VolleyResponseListener;
+import com.ankuryadav.volleylib.interfaces.VolleyResponseListner;
 
 
 /**
  * Created by AnkurYadav on 9/5/2017.
  */
 
-public class MainActivity extends AppCompatActivity implements VolleyResponseListener {
+public class MainActivity extends AppCompatActivity implements VolleyResponseListner {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
