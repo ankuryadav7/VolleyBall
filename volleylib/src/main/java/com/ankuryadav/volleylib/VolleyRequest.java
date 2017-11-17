@@ -1,6 +1,8 @@
 package com.ankuryadav.volleylib;
 
 import android.app.Activity;
+import android.support.v4.app.Fragment;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -28,6 +30,18 @@ public class VolleyRequest {
     public VolleyRequest(Activity context) {
         this.context=context;
         res = (VolleyResponseListener)context;
+    }
+
+    /**
+     * @param fragment
+     */
+    public VolleyRequest(Fragment fragment) {
+        try {
+            this.context=fragment.getActivity();
+            this.res = ((VolleyResponseListener) fragment);
+        } catch (ClassCastException e) {
+            throw new ClassCastException("Fragment must implement AdapterCallback.");
+        }
     }
 
     /**
