@@ -30,7 +30,7 @@ dependencies {
 Below are the simple steps by which you can integrate VolleyBall library in your project.
 
 * **Step 1-->>**
-Add **"VolleyResponseListener"** in your main class. By implementing this you will get below two methods.
+Add **"VolleyResponseListener"** in your main class or fragment. By implementing this you will get below two methods.
 ```java
  @Override
     public void volleyResponse(String response, String type) {
